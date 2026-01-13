@@ -1,0 +1,13 @@
+# Glossary
+
+**Context Engineering**: Designing the information environment the model reasons within (role, intent, constraints, policies, retrieved evidence).
+
+**RAG (Retrieval-Augmented Generation)**: Supplying retrieved source content to the model so responses are grounded in approved documents.
+
+**Policy Injection**: Adding rules/constraints that override or constrain user instructions to enforce compliance and safety.
+
+**RBAC (Role-Based Access Control)**: Restricting access to data, tools, and actions based on user role.
+
+**HITL (Human-in-the-Loop)**: Requiring human review/approval at defined risk thresholds or uncertainty conditions.
+
+**Refusal Logic**: Explicit system behavior that blocks responses when evidence is missing, conflicting, or disallowed.
