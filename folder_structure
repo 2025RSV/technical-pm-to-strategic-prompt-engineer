@@ -1,36 +1,55 @@
-strategic-prompt-engineering/
+enterprise-genai-context-architecture/
 │
 ├── README.md
+├── LICENSE
 │
-├── prompt-systems/
-│   ├── executive-decision-support/
-│   │   ├── v0_naive.md
-│   │   ├── v1_structured.md
-│   │   ├── v2_guardrails.md
-│   │   ├── v3_enterprise.md
-│   │   └── test_cases.md
-│   │
-│   ├── risk-sentinel/
-│   │   ├── prompt.md
-│   │   └── failure_modes.md
+├── 00_overview/
+│   ├── lab_mission.md
+│   ├── design_principles.md
+│   └── glossary.md
 │
-├── governance/
-│   ├── prompt_risk_assessment.md
-│   ├── prompt_review_checklist.md
-│   ├── audit_log_template.md
-│   ├── change_management.md
-│   └── approval_summary.md
+├── 01_reference_architecture/
+│   ├── system_overview.md
+│   ├── trust_boundaries.md
+│   ├── control_points.md
+│   └── failure_modes.md
 │
-├── experiments/
-│   ├── prompt_comparison.ipynb
-│   └── results.md
+├── 02_context_engineering/
+│   ├── context_pipeline.md
+│   ├── role_based_context.md
+│   ├── constraint_injection.md
+│   └── refusal_handling.md
 │
-├── decision-logs/
-│   ├── DL-001.md
-│   └── decision_log_template.md
+├── 03_retrieval_strategies/
+│   ├── retrieval_tiers.md
+│   ├── source_weighting.md
+│   ├── citation_rules.md
+│   └── conflict_resolution.md
 │
-├── frameworks/
-│   └── enterprise_prompt_governance_framework.md
+├── 04_governance_and_controls/
+│   ├── governance_model.md
+│   ├── access_controls.md
+│   ├── audit_logging.md
+│   └── human_in_the_loop.md
 │
-└── syntheses/
-    └── prompt_governance_is_delivery.md
+├── 05_evaluation_and_drift/
+│   ├── evaluation_metrics.md
+│   ├── hallucination_testing.md
+│   ├── drift_scenarios.md
+│   └── model_upgrade_impact.md
+│
+├── 06_delivery_playbooks/
+│   ├── agile_genai_delivery.md
+│   ├── stage_gates.md
+│   └── change_management.md
+│
+├── diagrams/
+│   ├── system_architecture.png
+│   ├── context_flow.png
+│   ├── retrieval_pipeline.png
+│   └── governance_controls.png
+│
+└── notes/
+    ├── experiments.md
+    ├── lessons_learned.md
+    └── open_questions.md
