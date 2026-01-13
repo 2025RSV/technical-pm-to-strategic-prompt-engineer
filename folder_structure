@@ -5,6 +5,68 @@ enterprise-genai-context-architecture/
 │
 ├── 00_overview/
 │   ├── lab_mission.md
+# Lab Mission — Enterprise GenAI Architecture & Context Engineering
+
+## Mission
+Build and document an enterprise-grade GenAI lab that demonstrates how to design **scalable, governable, production-minded** GenAI systems—focused on **context engineering, retrieval strategy (RAG), controls, and evaluation** rather than model training or novelty demos.
+
+This lab exists to convert architectural thinking and delivery governance into **hands-on, defensible GenAI systems experience**.
+
+## What “Success” Looks Like
+This lab is successful when it produces reusable, reviewable artifacts that reflect how GenAI must operate in real enterprise environments:
+
+- A clear **reference architecture** with trust boundaries and control points
+- A documented **context assembly pipeline** (role, intent, constraints, policy injection)
+- **Tiered retrieval strategies** with source weighting, citation rules, and conflict handling
+- **Governance-by-design controls** (RBAC, audit logs, HITL triggers, refusal logic)
+- A repeatable **evaluation approach** (hallucination tests, citation accuracy, refusal correctness, drift scenarios)
+- Diagrams and docs that a reviewer can understand in **under 10 minutes**
+
+## Scope
+### In scope
+- LLM-backed Q&A and workflow assistants using enterprise patterns:
+  - Context orchestration (role, intent, constraints, policy injection)
+  - Retrieval (RAG) with tiering and evidence requirements
+  - Guardrails and output classification (informational vs advisory)
+  - Auditability and traceability (inputs, sources, versions, timestamps)
+  - Evaluation and drift management
+
+### Out of scope (intentional)
+- Training or fine-tuning large models
+- Benchmark-chasing, novelty prompting, or “prompt hacks”
+- Internet-connected agents with autonomous execution authority
+- Claims of production deployment or business impact that did not occur
+
+## Design Constraints (Non-Negotiables)
+- **LLM is not the source of truth**: enterprise facts must come from approved context
+- **Citations are mandatory** for factual or policy-relevant statements
+- **Refusal is a feature**: the system must stop when context is missing or conflicting
+- **Controls precede capability**: governance and safety patterns are built-in, not bolted-on
+- **Artifacts over opinions**: diagrams, docs, tests, and examples are the deliverables
+
+## Primary Use Cases (Lab Scenarios)
+This lab simulates realistic enterprise scenarios, such as:
+- Policy Q&A with citations and refusal behavior
+- Incident / audit analysis support with role-based scope and evidence rules
+- Procedural guidance constrained to authoritative documentation
+- Change-control summaries with traceability and approval checkpoints
+
+## Intended Audience
+- Enterprise AI / GenAI Architects
+- Context Engineers / LLM Systems Designers
+- AI Governance and Responsible AI practitioners
+- Delivery leaders translating AI into operating models
+- Hiring managers evaluating system-level AI thinking
+
+## Operating Cadence
+- Build incrementally in phases (architecture → context → retrieval → controls → evaluation)
+- Document every pattern as if it were going into an architecture review
+- Capture failure modes and mitigations explicitly
+- Maintain an “audit-ready” narrative: what, why, tradeoffs, and evidence
+
+## Status
+Active learning lab. Emphasis is on **clarity, defensibility, and enterprise realism** over speed or completeness.
+
 │   ├── design_principles.md
 │   └── glossary.md
 │
